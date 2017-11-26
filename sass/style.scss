@@ -19,9 +19,10 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-// SASS PARTIALS
-@import 'sstyles'; 		// the original styles by _S
+/* _S Styles */
+@import 'sstyles';
+
+/*! ===== MY STYLES FROM HERE ===== */
 @import 'responsive'; 	// responsive layout
 @import 'typography'; 	// typography
 @import 'navigation'; 	// navigation bar
-

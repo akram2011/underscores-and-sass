@@ -11,6 +11,8 @@ $font-display: 'Sonsie One', cursive;
 $font-normal: 'Antic', sans-serif;
 $font-manchet: 'Jockey One', sans-serif;
 
+// Font colors
+
 
 /* Header */
 .site-branding {
@@ -31,18 +33,30 @@ $font-manchet: 'Jockey One', sans-serif;
 }
 
 /* Headings */
-h1,h2,h3,h4,h5,h6 {
-	display: absolute;
+
+// display font
+h1,h2 {
 	font-family: $font-manchet;
+}
+
+// readable font
+h3,h4,h5,h6 {
+	font-family: $font-normal;
+	font-weight: bold;
 }
 
 .entry-title, .page-title {
 	font-family: $font-manchet;
+	font-weight: bold;
+	a {
+		text-decoration: none;	
+	}
 }
 
 .widget-title, .site-info, .posted-on {
 	font-family: $font-normal;
 	font-weight: bold;
+	font-size: small;
 }
 
 
@@ -59,6 +73,8 @@ h1,h2,h3,h4,h5,h6 {
 
 /* The Site Tag Line */
 .site-description {
+	position: relative;
+	float: left;
 	font-family: $font-manchet;
 	font-size: 1.5em;
 }
@@ -69,8 +85,25 @@ p {
 	font-family: $font-normal;
 }
 
+ul, ol {
+	margin: 0 0 0 1.5em;
+}
+
 ul li {
 	font-family: $font-normal;
+	padding-left: 0px;
+}
+
+aside {
+	ul {
+		margin: 0 0 0 0;
+		 list-style-type: none;
+		li {
+			a {
+				text-decoration: none;			
+			}					
+		}	
+	}
 }
 
 figcaption {

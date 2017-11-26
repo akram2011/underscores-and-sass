@@ -18,6 +18,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+/* _S Styles */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -723,6 +724,7 @@ object {
 .gallery-caption {
   display: block; }
 
+/*! ===== MY STYLES FROM HERE ===== */
 .wrapper {
   display: -webkit-box;
   display: -moz-box;
@@ -742,6 +744,7 @@ object {
   -webkit-order: 2;
   order: 2; }
 
+/*! Responsive styles*/
 @media all and (min-width: 800px) {
   #content {
     display: inline-flex;
@@ -759,6 +762,7 @@ object {
 
 /* Medium screens */
 @media all and (max-width: 360px) {
+  /* wrapper */
   #content {
     padding-left: 2%;
     padding-right: 2%; }
@@ -766,6 +770,11 @@ object {
   /* the sidebar content */ }
 
 /* Small screens */
+/*
+@media all and (max-width: 500px) {
+
+}
+*/
 /*! TYPOGRAPHY */
 /**
  * Google Fonts
@@ -778,16 +787,23 @@ object {
   font-size: smaller; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  display: absolute;
+h1, h2 {
   font-family: "Jockey One", sans-serif; }
 
+h3, h4, h5, h6 {
+  font-family: "Antic", sans-serif;
+  font-weight: bold; }
+
 .entry-title, .page-title {
-  font-family: "Jockey One", sans-serif; }
+  font-family: "Jockey One", sans-serif;
+  font-weight: bold; }
+  .entry-title a, .page-title a {
+    text-decoration: none; }
 
 .widget-title, .site-info, .posted-on {
   font-family: "Antic", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: small; }
 
 /* The Site Name */
 .site-title {
@@ -798,6 +814,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* The Site Tag Line */
 .site-description {
+  position: relative;
+  float: left;
   font-family: "Jockey One", sans-serif;
   font-size: 1.5em; }
 
@@ -805,8 +823,18 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "Antic", sans-serif; }
 
+ul, ol {
+  margin: 0 0 0 1.5em; }
+
 ul li {
-  font-family: "Antic", sans-serif; }
+  font-family: "Antic", sans-serif;
+  padding-left: 0px; }
+
+aside ul {
+  margin: 0 0 0 0;
+  list-style-type: none; }
+  aside ul li a {
+    text-decoration: none; }
 
 figcaption {
   font-family: "Antic", sans-serif;

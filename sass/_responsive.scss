@@ -1,5 +1,4 @@
 // SASS: flexbox prefixers
-
 @mixin flexbox() {
   display: -webkit-box;
   display: -moz-box;
@@ -33,8 +32,8 @@
   @include order(2);
 }
 
+/*! Responsive styles*/
 
-// FLEXBOX SCREEN
 @media all and (min-width: 800px) {
 
 	#content {
@@ -61,24 +60,23 @@
 /* Medium screens */
 @media all and (max-width: 360px) {
 
+	/* wrapper */
 	#content {
 		padding-left: 2%;
 		padding-right: 2%;
 		}
 	
 	/* the main content area */
-	#main {
-
-	}
+	#main {  }
 	
 	/* the sidebar content */
-	#aside, .widget-area {
-
-		}
+	#aside, .widget-area {  }
 
 }
 
 /* Small screens */
+/*
 @media all and (max-width: 500px) {
 
 }
+*/
