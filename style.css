@@ -744,9 +744,6 @@ object {
   -webkit-order: 2;
   order: 2; }
 
-header {
-  padding-left: 2rem; }
-
 /* flexbox */
 #page {
   background-color: #fff;
@@ -773,9 +770,6 @@ aside {
 .site-branding h1 {
   font-family: "Sonsie One", cursive; }
 
-.site-branding .site-description {
-  font-size: smaller; }
-
 /* Headings */
 h1, h2 {
   font-family: "Jockey One", sans-serif; }
@@ -798,16 +792,16 @@ h3, h4, h5, h6 {
 /* The Site Name */
 .site-title {
   font-family: "Sonsie One", cursive;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  text-align: center; }
   .site-title a {
     text-decoration: none; }
 
 /* The Site Tag Line */
 .site-description {
-  position: relative;
-  float: left;
   font-family: "Jockey One", sans-serif;
-  font-size: 1.5em; }
+  font-size: small;
+  text-align: center; }
 
 /* Paragraphs, Lists etc. */
 p {

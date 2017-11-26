@@ -25,11 +25,6 @@ $font-manchet: 'Jockey One', sans-serif;
 		}
 	
 	}
-	
-	.site-description {
-		font-size: smaller;	
-	}
-
 }
 
 /* Headings */
@@ -64,6 +59,7 @@ h3,h4,h5,h6 {
 .site-title {
  	font-family: $font-display;
  	font-size: 2.5rem;
+ 	text-align: center;
  	
  	a {
 		text-decoration: none; 	
@@ -73,10 +69,9 @@ h3,h4,h5,h6 {
 
 /* The Site Tag Line */
 .site-description {
-	position: relative;
-	float: left;
 	font-family: $font-manchet;
-	font-size: 1.5em;
+	font-size: small;
+	text-align: center;	
 }
 
 
@@ -125,3 +120,5 @@ figcaption {
 	font-family: $font-normal;
 	font-size: small;
 }
+
+// ... media queries to follow here ...

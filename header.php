@@ -25,6 +25,10 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'petj-17' ); ?></a>
 
 	<header id="masthead" class="site-header">
+	
+		<!-- custom header image -->
+		<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="header image">	
+	
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
