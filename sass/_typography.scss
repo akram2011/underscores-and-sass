@@ -1,0 +1,94 @@
+/*! TYPOGRAPHY */
+
+/**
+ * Google Fonts
+ **/
+@import url('https://fonts.googleapis.com/css?family=Antic|Jockey+One|Sonsie+One');
+
+
+// FONT VARIABLES
+$font-display: 'Sonsie One', cursive;
+$font-normal: 'Antic', sans-serif;
+$font-manchet: 'Jockey One', sans-serif;
+
+
+/* Header */
+.site-branding {
+
+	h1 {
+		font-family: $font-display;
+
+		a {
+		
+		}
+	
+	}
+	
+	.site-description {
+		font-size: smaller;	
+	}
+
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	display: absolute;
+	font-family: $font-manchet;
+}
+
+.entry-title, .page-title {
+	font-family: $font-manchet;
+}
+
+.widget-title, .site-info, .posted-on {
+	font-family: $font-normal;
+	font-weight: bold;
+}
+
+
+/* The Site Name */
+.site-title {
+ 	font-family: $font-display;
+ 	font-size: 2.5rem;
+ 	
+ 	a {
+		text-decoration: none; 	
+ 	}
+}
+
+
+/* The Site Tag Line */
+.site-description {
+	font-family: $font-manchet;
+	font-size: 1.5em;
+}
+
+
+/* Paragraphs, Lists etc. */
+p {
+	font-family: $font-normal;
+}
+
+ul li {
+	font-family: $font-normal;
+}
+
+figcaption {
+	font-family: $font-normal;
+	font-style: italic;
+}
+
+.cat-links, .tags-links {
+	font-family: $font-normal;
+	font-size: small;
+}
+
+.post-edit-link {
+	/* btn for edit */
+	font-size: small;
+}
+
+.posted-on {
+	font-family: $font-normal;
+	font-size: small;
+}
