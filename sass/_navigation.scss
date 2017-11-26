@@ -2,24 +2,13 @@
  * Navigation Styles
  **/
  
- 
+  
 /* colors */
 $tenebrae: 	#000;
 $lux: 		#fff;
 $hover: 	#0f0;
 $hoverBg: 	#293e45;
 
-
-/* navigation */
-.menu-item, {
-	padding: .4em;
-	background-color: $tenebrae;
-	color: $lux;
-	
-	&:hover {
-		background-color: $hoverBg;	
-	}
-}
 
 .main-navigation {
 	background-color: $tenebrae;
@@ -31,5 +20,17 @@ $hoverBg: 	#293e45;
 	
 	&:hover{
 			color: $hover;
+	}
+}
+
+
+/* navigation */
+.menu-item, {
+	padding: .4em;
+	background-color: $tenebrae;
+	color: $lux;
+	
+	&:hover {
+		background-color: $tenebrae;	
 	}
 }

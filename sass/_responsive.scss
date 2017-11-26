@@ -1,4 +1,5 @@
 // SASS: flexbox prefixers
+
 @mixin flexbox() {
   display: -webkit-box;
   display: -moz-box;
@@ -32,51 +33,28 @@
   @include order(2);
 }
 
-/*! Responsive styles*/
-
-@media all and (min-width: 800px) {
-
-	#content {
-		display: inline-flex; /* or flex */
-		width: 100%;
-		padding-left: 10%;
-		padding-right: 5%;	
-		margin: auto;
-	}
-	
-	/* the main content area */
-	#main {
-		width: 70%;
-	}
-	
-	/* the sidebar content */
-	#aside, .widget-area {
-		width: 30%;
-		}
-
+header {
+	padding-left: 2rem;
 }
 
-// RESPONSIVE
-/* Medium screens */
-@media all and (max-width: 360px) {
-
-	/* wrapper */
-	#content {
-		padding-left: 2%;
-		padding-right: 2%;
-		}
-	
-	/* the main content area */
-	#main {  }
-	
-	/* the sidebar content */
-	#aside, .widget-area {  }
-
+/* flexbox */
+#page {
+	background-color: #fff;
+	width: 980px;
+	margin: auto;
 }
 
-/* Small screens */
-/*
-@media all and (max-width: 500px) {
-
+#content {
+	 display: flex;
+	 flex-wrap: wrap;
 }
-*/
+
+#primary {
+	padding-left: 2rem;
+	width: 600px;
+}
+
+aside {
+	padding-left: 2rem;
+	width: 300px;
+}

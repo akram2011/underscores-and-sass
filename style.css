@@ -744,37 +744,27 @@ object {
   -webkit-order: 2;
   order: 2; }
 
-/*! Responsive styles*/
-@media all and (min-width: 800px) {
-  #content {
-    display: inline-flex;
-    /* or flex */
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 5%;
-    margin: auto; }
-  /* the main content area */
-  #main {
-    width: 70%; }
-  /* the sidebar content */
-  #aside, .widget-area {
-    width: 30%; } }
+header {
+  padding-left: 2rem; }
 
-/* Medium screens */
-@media all and (max-width: 360px) {
-  /* wrapper */
-  #content {
-    padding-left: 2%;
-    padding-right: 2%; }
-  /* the main content area */
-  /* the sidebar content */ }
+/* flexbox */
+#page {
+  background-color: #fff;
+  width: 980px;
+  margin: auto; }
 
-/* Small screens */
-/*
-@media all and (max-width: 500px) {
+#content {
+  display: flex;
+  flex-wrap: wrap; }
 
-}
-*/
+#primary {
+  padding-left: 2rem;
+  width: 600px; }
+
+aside {
+  padding-left: 2rem;
+  width: 300px; }
+
 /*! TYPOGRAPHY */
 /**
  * Google Fonts
@@ -856,18 +846,18 @@ figcaption {
  * Navigation Styles
  **/
 /* colors */
+.main-navigation, .main-navigation a {
+  background-color: #000;
+  color: #fff; }
+  .main-navigation:hover, .main-navigation a:hover {
+    color: #0f0; }
+
 /* navigation */
 .menu-item {
   padding: .4em;
   background-color: #000;
   color: #fff; }
   .menu-item:hover {
-    background-color: #293e45; }
-
-.main-navigation, .main-navigation a {
-  background-color: #000;
-  color: #fff; }
-  .main-navigation:hover, .main-navigation a:hover {
-    color: #0f0; }
+    background-color: #000; }
 
 /*# sourceMappingURL=maps/style.css.map */
