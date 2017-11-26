@@ -12,7 +12,11 @@ $font-normal: 'Antic', sans-serif;
 $font-manchet: 'Jockey One', sans-serif;
 
 // Font colors
-
+$red:			#ce0000;
+$blue:			#4169e1;
+$darkgreen: 	#21759b;
+$darkgrey:		#82878c;
+;
 
 /* Header */
 .site-branding {
@@ -78,6 +82,7 @@ h3,h4,h5,h6 {
 /* Paragraphs, Lists etc. */
 p {
 	font-family: $font-normal;
+	text-align: justify;
 }
 
 ul, ol {
@@ -119,6 +124,60 @@ figcaption {
 .posted-on {
 	font-family: $font-normal;
 	font-size: small;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+
+	a {
+			color: silver;
+			text-decoration: none;		
+		}
+	&:visited {
+			color: silver;
+		}
+
+	.site-info {
+		padding-top: .3rem;
+		padding-bottom: .7rem;
+		text-align: center;
+		
+		a {
+			color: silver;		
+		}
+							
+	}
+}
+
+.entry-title {
+	color: $darkgreen;	
+	
+	a {
+		color: $darkgreen;
+	}
+}
+
+.entry-footer {
+	background-color: $darkgrey;
+	font-size: small;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.post-edit-link, .comments-link {
+	margin-left: 2rem;
+	color: #fff;
+	
+	&:visited {
+		@extend .post-edit-link;	
+	}
+}
+
+
+.tag-cloud-link {
+	font-family: $font-manchet;
+	color: $red;
 }
 
 // ... media queries to follow here ...
