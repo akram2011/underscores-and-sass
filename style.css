@@ -863,6 +863,7 @@ footer {
     color: #21759b; }
 
 .entry-footer {
+  margin-top: 1.234rem;
   background-color: #82878c;
   font-size: small;
   text-align: center;
