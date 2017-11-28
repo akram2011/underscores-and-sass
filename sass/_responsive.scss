@@ -33,6 +33,11 @@
   @include order(2);
 }
 
+
+
+// responsive
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+
 /* flexbox */
 #page {
 	background-color: #fff;
@@ -53,4 +58,14 @@
 aside {
 	padding-left: 2rem;
 	width: 300px;
+}
+
+}
+
+/**
+ * Custom pages
+ **/
+#frontpage {
+	width: 95%;
+	margin: auto;
 }

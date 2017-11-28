@@ -744,23 +744,28 @@ object {
   -webkit-order: 2;
   order: 2; }
 
-/* flexbox */
-#page {
-  background-color: #fff;
-  width: 980px;
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  /* flexbox */
+  #page {
+    background-color: #fff;
+    width: 980px;
+    margin: auto; }
+  #content {
+    display: flex;
+    flex-wrap: wrap; }
+  #primary {
+    padding-left: 2rem;
+    width: 600px; }
+  aside {
+    padding-left: 2rem;
+    width: 300px; } }
+
+/**
+ * Custom pages
+ **/
+#frontpage {
+  width: 95%;
   margin: auto; }
-
-#content {
-  display: flex;
-  flex-wrap: wrap; }
-
-#primary {
-  padding-left: 2rem;
-  width: 600px; }
-
-aside {
-  padding-left: 2rem;
-  width: 300px; }
 
 /*! TYPOGRAPHY */
 /**
