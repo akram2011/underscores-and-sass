@@ -738,153 +738,53 @@ object {
   @include order(2);
 }
 **/
-/* flexbox */
-#page {
-  background-color: #fff;
-  width: 980px;
-  margin: auto; }
+/**
+ * Large screens
+ **/
+.content-area {
+  float: left;
+  margin: 0 -25% 0 0;
+  width: 100%; }
 
-#content {
-  display: flex;
-  flex-wrap: wrap; }
+.site-main {
+  margin: 0 25% 0 0; }
 
-#primary {
-  width: 600px; }
+.site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 25%; }
 
-aside {
-  width: 300px; }
+.site-footer {
+  clear: both;
+  width: 100%; }
+
+#masthead img {
+  width: 100%;
+  height: auto; }
 
 /**
  * Why use SASS?
  * - mixins!
  **/
-@media only screen and (max-width: 768px) {
-  #page {
-    background-color: #fff;
-    max-width: 700px;
-    margin: auto; }
-  #content {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    display: flex;
-    flex-wrap: wrap; }
-  #primary {
-    width: 400px;
-    max-width: 100%; }
-  aside {
-    width: 300px;
-    max-width: 100%; }
-  .site-title a {
-    font-size: 1.1em; }
-  img,
-  iframe,
-  .entry-footer,
-  .entry-content,
-  .entry-header,
-  .entry-footer,
-  .site-branding,
-  .site.title,
-  #mast-head {
-    max-width: 100%; } }
-
-@media only screen and (max-width: 598px) {
-  #page {
-    background-color: #fff;
-    max-width: 500px;
-    margin: auto; }
-  #content {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    display: flex;
-    flex-wrap: wrap; }
-  #primary {
-    width: 500px;
-    max-width: 100%; }
-  aside {
-    width: 500px;
-    max-width: 100%; }
-  .site-title a {
-    font-size: 20px; }
-  img,
-  iframe,
-  .entry-footer,
-  .entry-content,
-  .entry-header,
-  .entry-footer,
-  .site-branding,
-  .site.title,
-  #mast-head {
-    max-width: 100%; } }
-
-@media only screen and (max-width: 360px) {
-  #page {
-    background-color: #fff;
-    max-width: 360px;
-    margin: auto; }
-  #content {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    display: flex;
-    flex-wrap: wrap; }
-  #primary {
-    width: 360px;
-    max-width: 100%; }
-  aside {
-    width: 360px;
-    max-width: 100%; }
-  .site-title a {
-    font-size: 1rem; }
-  img,
-  iframe,
-  .entry-footer,
-  .entry-content,
-  .entry-header,
-  .entry-footer,
-  .site-branding,
-  .site.title,
-  #mast-head {
-    max-width: 100%; } }
-
-@media only screen and (max-width: 320px) {
-  #page {
-    background-color: #fff;
-    max-width: 300px;
-    margin: auto; }
-  #content {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    display: flex;
-    flex-wrap: wrap; }
-  #primary {
-    width: 300px;
-    max-width: 100%; }
-  aside {
-    width: 300px;
-    max-width: 100%; }
-  .site-title a {
-    font-size: 1rem; }
-  img,
-  iframe,
-  .entry-footer,
-  .entry-content,
-  .entry-header,
-  .entry-footer,
-  .site-branding,
-  .site.title,
-  #mast-head {
-    max-width: 100%; } }
+/**
+ * media queries
+ **/
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  .content-area {
+    float: left;
+    margin: 0 -25% 0 0;
+    width: 100%; }
+  .site-main {
+    margin: 0 25% 0 0; }
+  .site-content .widget-area {
+    clear: both;
+    overflow: hidden;
+    width: 100%; }
+  .site-footer {
+    clear: both;
+    width: 100%; }
+  body {
+    font-size: 123%; } }
 
 /*! TYPOGRAPHY */
 /**
@@ -965,7 +865,6 @@ footer {
   background-color: #000;
   color: #fff; }
   footer a {
-    color: silver;
     text-decoration: none; }
   footer:visited {
     color: silver; }
@@ -982,14 +881,14 @@ footer {
     color: #21759b; }
 
 .entry-footer {
-  background-color: #82878c;
+  background-color: #fff;
+  color: #000;
   font-size: small;
   text-align: center;
   margin-bottom: 2rem; }
 
 .post-edit-link, .post-edit-link:visited, .comments-link:visited, .comments-link {
-  margin-left: 2rem;
-  color: #fff; }
+  margin-left: 2rem; }
 
 .tag-cloud-link {
   font-family: "Jockey One", sans-serif;

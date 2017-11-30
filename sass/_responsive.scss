@@ -39,106 +39,68 @@
 }
 **/
 
-/* flexbox */
-#page {
-	background-color: #fff;
-	width: 980px;
-	margin: auto;
+/**
+ * Large screens
+ **/
+
+.content-area {
+	float: left;
+	margin: 0 -25% 0 0;
+	width: 100%;
+}
+.site-main {
+	margin: 0 25% 0 0;
+}
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 25%;
+}
+.site-footer {
+	clear: both;
+	width: 100%;
 }
 
-#content {
-	 display: flex;
-	 flex-wrap: wrap;
-}
-
-#primary {
-	width: 600px;
-}
-
-aside {
-	//padding-left: 2rem;
-	width: 300px;
+// header image
+#masthead {
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 /**
  * Why use SASS?
  * - mixins!
  **/
+// responsive mixin
+@mixin responsive() {
 
-// mixin
-@mixin responsive(
-	$page,
-	$primary,
-	$aside,
-	$siteTitle
-	) {
-
-	#page {
-		background-color: #fff;
-		max-width: $page;
-		margin: auto;
+	.content-area {
+		float: left;
+		margin: 0 -25% 0 0;
+		width: 100%;
 	}
-	
-	// "wrapper" content container	
-	#content {
-		@include flexbox(); // prefixes for browsers
-		display: flex;
-		flex-wrap: wrap;
+	.site-main {
+		margin: 0 25% 0 0;
 	}
-	
-	// content
-	#primary {
-		width: $primary;
-		max-width: 100%;
+	.site-content .widget-area {
+		clear: both;
+		overflow: hidden;
+		width: 100%;
 	}
-	
-	// sidebar, widgets
-	aside {
-		width: $aside;
-		max-width: 100%;
+	.site-footer {
+		clear: both;
+		width: 100%;
 	}
-	
-	// site title size
-	.site-title {
-		a {
-			font-size: $siteTitle;		
-		}	
+} // end responsive
+
+/**
+ * media queries
+ **/
+@media screen and (min-width: 200px) and (max-width: 700px) {
+	@include responsive(); // sidebar to bottom
+	body {
+		font-size: 123%;
 	}
-	
-	// images and media
-	img, 
-	iframe, 
-	.entry-footer, 
-	.entry-content, 
-	.entry-header,
-	.entry-footer, 
-	.site-branding,
-	.site.title,
-	#mast-head {
-		max-width: 100%;	
-	}
-} // end responsive mixin
-
-// mixin usage: 
-//.someClass { @include responsive(980px,500px,420px); } 
-//
-
-// tablets: iPads and friends
-@media only screen and (max-width: 768px) {
-	@include responsive(700px,400px,300px,1.1em);   
-}
-
-// mobile
-@media only screen and (max-width: 598px) {
-	@include responsive(500px,500px,500px,20px);   
-}
-
-// smaller mobile
-@media only screen and (max-width: 360px) {
-	@include responsive(360px,360px,360px,1rem);   
-}
-
-// smaller mobile
-@media only screen and (max-width: 320px) {
-	@include responsive(300px,300px,300px,1rem);   
 }

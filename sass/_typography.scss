@@ -131,7 +131,7 @@ footer {
 	color: #fff;
 
 	a {
-			color: silver;
+			//color: silver;
 			text-decoration: none;		
 		}
 	&:visited {
@@ -159,7 +159,8 @@ footer {
 }
 
 .entry-footer {
-	background-color: $darkgrey;
+	background-color: #fff;
+	color: #000;
 	font-size: small;
 	text-align: center;
 	margin-bottom: 2rem;
@@ -167,7 +168,7 @@ footer {
 
 .post-edit-link, .comments-link {
 	margin-left: 2rem;
-	color: #fff;
+	//color: #fff;
 	
 	&:visited {
 		@extend .post-edit-link;	
