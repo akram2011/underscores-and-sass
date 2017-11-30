@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "compass": "^0.1.1",
     "gulp-sourcemaps": "^2.6.1"
   },
   "devDependencies": {

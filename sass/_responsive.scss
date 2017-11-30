@@ -1,6 +1,8 @@
-// SASS: flexbox prefixers
 
-@mixin flexbox() {
+/**
+ * SASS: flexbox prefixers
+ **/
+ @mixin flexbox() {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -24,6 +26,9 @@
   order: $val;
 }
 
+/** 
+ * SASS mixin usage
+
 .wrapper {
   @include flexbox();
 }
@@ -32,6 +37,7 @@
   @include flex(1 200px);
   @include order(2);
 }
+**/
 
 /* flexbox */
 #page {
@@ -46,11 +52,93 @@
 }
 
 #primary {
-	padding-left: 2rem;
 	width: 600px;
 }
 
 aside {
-	padding-left: 2rem;
+	//padding-left: 2rem;
 	width: 300px;
+}
+
+/**
+ * Why use SASS?
+ * - mixins!
+ **/
+
+// mixin
+@mixin responsive(
+	$page,
+	$primary,
+	$aside,
+	$siteTitle
+	) {
+
+	#page {
+		background-color: #fff;
+		max-width: $page;
+		margin: auto;
+	}
+	
+	// "wrapper" content container	
+	#content {
+		@include flexbox(); // prefixes for browsers
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	// content
+	#primary {
+		width: $primary;
+		max-width: 100%;
+	}
+	
+	// sidebar, widgets
+	aside {
+		width: $aside;
+		max-width: 100%;
+	}
+	
+	// site title size
+	.site-title {
+		a {
+			font-size: $siteTitle;		
+		}	
+	}
+	
+	// images and media
+	img, 
+	iframe, 
+	.entry-footer, 
+	.entry-content, 
+	.entry-header,
+	.entry-footer, 
+	.site-branding,
+	.site.title,
+	#mast-head {
+		max-width: 100%;	
+	}
+} // end responsive mixin
+
+// mixin usage: 
+//.someClass { @include responsive(980px,500px,420px); } 
+//
+
+// tablets: iPads and friends
+@media only screen and (max-width: 768px) {
+	@include responsive(700px,400px,300px,1.1em);   
+}
+
+// mobile
+@media only screen and (max-width: 598px) {
+	@include responsive(500px,500px,500px,20px);   
+}
+
+// smaller mobile
+@media only screen and (max-width: 360px) {
+	@include responsive(360px,360px,360px,1rem);   
+}
+
+// smaller mobile
+@media only screen and (max-width: 320px) {
+	@include responsive(300px,300px,300px,1rem);   
 }

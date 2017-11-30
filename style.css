@@ -1,9 +1,9 @@
 /*!
 Theme Name: petj-17
-Theme URI: http://underscores.me/
+Theme URI: http://multimusen.dk
 Author: Per Thykjaer Jensen, based on Underscores.me
 Author URI: https://github.com/asathoor/underscores-and-sass
-Description: Styled via SASS, layout via Flexbox
+Description: Underscores by Automattic. Styled via SASS, layout via Flexbox
 Version: 0.5
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -18,7 +18,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-/* _S Styles */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -256,7 +255,7 @@ pre {
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1.6em; }
+  padding: 1.3em; }
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
@@ -724,26 +723,21 @@ object {
 .gallery-caption {
   display: block; }
 
-/*! ===== MY STYLES FROM HERE ===== */
+/**
+ * SASS: flexbox prefixers
+ **/
+/** 
+ * SASS mixin usage
+
 .wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
+  @include flexbox();
+}
 
 .item {
-  -webkit-box-flex: 1 200px;
-  -moz-box-flex: 1 200px;
-  -webkit-flex: 1 200px;
-  -ms-flex: 1 200px;
-  flex: 1 200px;
-  -webkit-box-ordinal-group: 2;
-  -moz-box-ordinal-group: 2;
-  -ms-flex-order: 2;
-  -webkit-order: 2;
-  order: 2; }
-
+  @include flex(1 200px);
+  @include order(2);
+}
+**/
 /* flexbox */
 #page {
   background-color: #fff;
@@ -755,12 +749,142 @@ object {
   flex-wrap: wrap; }
 
 #primary {
-  padding-left: 2rem;
   width: 600px; }
 
 aside {
-  padding-left: 2rem;
   width: 300px; }
+
+/**
+ * Why use SASS?
+ * - mixins!
+ **/
+@media only screen and (max-width: 768px) {
+  #page {
+    background-color: #fff;
+    max-width: 700px;
+    margin: auto; }
+  #content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap; }
+  #primary {
+    width: 400px;
+    max-width: 100%; }
+  aside {
+    width: 300px;
+    max-width: 100%; }
+  .site-title a {
+    font-size: 1.1em; }
+  img,
+  iframe,
+  .entry-footer,
+  .entry-content,
+  .entry-header,
+  .entry-footer,
+  .site-branding,
+  .site.title,
+  #mast-head {
+    max-width: 100%; } }
+
+@media only screen and (max-width: 598px) {
+  #page {
+    background-color: #fff;
+    max-width: 500px;
+    margin: auto; }
+  #content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap; }
+  #primary {
+    width: 500px;
+    max-width: 100%; }
+  aside {
+    width: 500px;
+    max-width: 100%; }
+  .site-title a {
+    font-size: 20px; }
+  img,
+  iframe,
+  .entry-footer,
+  .entry-content,
+  .entry-header,
+  .entry-footer,
+  .site-branding,
+  .site.title,
+  #mast-head {
+    max-width: 100%; } }
+
+@media only screen and (max-width: 360px) {
+  #page {
+    background-color: #fff;
+    max-width: 360px;
+    margin: auto; }
+  #content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap; }
+  #primary {
+    width: 360px;
+    max-width: 100%; }
+  aside {
+    width: 360px;
+    max-width: 100%; }
+  .site-title a {
+    font-size: 1rem; }
+  img,
+  iframe,
+  .entry-footer,
+  .entry-content,
+  .entry-header,
+  .entry-footer,
+  .site-branding,
+  .site.title,
+  #mast-head {
+    max-width: 100%; } }
+
+@media only screen and (max-width: 320px) {
+  #page {
+    background-color: #fff;
+    max-width: 300px;
+    margin: auto; }
+  #content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap; }
+  #primary {
+    width: 300px;
+    max-width: 100%; }
+  aside {
+    width: 300px;
+    max-width: 100%; }
+  .site-title a {
+    font-size: 1rem; }
+  img,
+  iframe,
+  .entry-footer,
+  .entry-content,
+  .entry-header,
+  .entry-footer,
+  .site-branding,
+  .site.title,
+  #mast-head {
+    max-width: 100%; } }
 
 /*! TYPOGRAPHY */
 /**
@@ -875,9 +999,6 @@ footer {
  * Navigation Styles
  **/
 /* colors */
-#primary-menu {
-  margin-left: 2rem; }
-
 .main-navigation, .main-navigation a {
   background-color: #000;
   color: #fff; }
@@ -886,7 +1007,7 @@ footer {
 
 /* navigation */
 .menu-item {
-  padding-right: .8rem;
+  margin-right: .8rem;
   background-color: #000;
   color: #fff; }
   .menu-item:hover {

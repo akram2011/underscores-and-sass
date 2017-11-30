@@ -10,7 +10,7 @@ $hover: 	#0f0;
 $hoverBg: 	#293e45;
 
 #primary-menu {
-	margin-left: 2rem;
+	//margin-left: 2rem;
 }
 
 .main-navigation {
@@ -26,10 +26,9 @@ $hoverBg: 	#293e45;
 	}
 }
 
-
 /* navigation */
 .menu-item, {
-	padding-right: .8rem;
+	margin-right: .8rem;
 	background-color: $tenebrae;
 	color: $lux;
 	

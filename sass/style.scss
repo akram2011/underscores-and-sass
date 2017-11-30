@@ -1,9 +1,9 @@
 /*!
 Theme Name: petj-17
-Theme URI: http://underscores.me/
+Theme URI: http://multimusen.dk
 Author: Per Thykjaer Jensen, based on Underscores.me
 Author URI: https://github.com/asathoor/underscores-and-sass
-Description: Styled via SASS, layout via Flexbox
+Description: Underscores by Automattic. Styled via SASS, layout via Flexbox
 Version: 0.5
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -19,10 +19,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-/* _S Styles */
-@import 'sstyles';
-
-/*! ===== MY STYLES FROM HERE ===== */
-@import 'responsive'; 	// responsive layout
+@import 'sstyles';		// from _S
+@import 'responsive'; 	// responsive
 @import 'typography'; 	// typography
 @import 'navigation'; 	// navigation bar
