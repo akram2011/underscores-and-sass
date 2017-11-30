@@ -1,46 +1,29 @@
+// responsive mixin
+@mixin responsive() {
+	.content-area {
+		float: left;
+		margin: 0 -25% 0 0;
+		width: 100%;
+	}
+	.site-main {
+		margin: 0 25% 0 0;
+	}
+	.site-content .widget-area {
+		clear: both;
+		overflow: hidden;
+		width: 100%;
+	}
+	.site-footer {
+		clear: both;
+		width: 100%;
+	}
+	img {
+		max-width: 100%;
+	}
+} // end responsive
 
 /**
- * SASS: flexbox prefixers
- **/
- @mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-
-@mixin flex($values) {
-  -webkit-box-flex: $values;
-  -moz-box-flex:  $values;
-  -webkit-flex:  $values;
-  -ms-flex:  $values;
-  flex:  $values;
-}
-
-@mixin order($val) {
-  -webkit-box-ordinal-group: $val;  
-  -moz-box-ordinal-group: $val;     
-  -ms-flex-order: $val;     
-  -webkit-order: $val;  
-  order: $val;
-}
-
-/** 
- * SASS mixin usage
-
-.wrapper {
-  @include flexbox();
-}
-
-.item {
-  @include flex(1 200px);
-  @include order(2);
-}
-**/
-
-/**
- * Large screens
+ * PC, Laptop
  **/
 
 .content-area {
@@ -69,31 +52,6 @@
 	}
 }
 
-/**
- * Why use SASS?
- * - mixins!
- **/
-// responsive mixin
-@mixin responsive() {
-
-	.content-area {
-		float: left;
-		margin: 0 -25% 0 0;
-		width: 100%;
-	}
-	.site-main {
-		margin: 0 25% 0 0;
-	}
-	.site-content .widget-area {
-		clear: both;
-		overflow: hidden;
-		width: 100%;
-	}
-	.site-footer {
-		clear: both;
-		width: 100%;
-	}
-} // end responsive
 
 /**
  * media queries
