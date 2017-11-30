@@ -23,9 +23,15 @@
 } // end responsive
 
 /**
+ * line length
+ **/
+#main, #secondary {
+	padding: 2rem;
+}
+
+/**
  * PC, Laptop
  **/
-
 .content-area {
 	float: left;
 	margin: 0 -25% 0 0;

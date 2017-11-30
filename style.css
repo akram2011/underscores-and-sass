@@ -724,22 +724,13 @@ object {
   display: block; }
 
 /**
- * SASS: flexbox prefixers
+ * line length
  **/
-/** 
- * SASS mixin usage
+#main, #secondary {
+  padding: 2rem; }
 
-.wrapper {
-  @include flexbox();
-}
-
-.item {
-  @include flex(1 200px);
-  @include order(2);
-}
-**/
 /**
- * Large screens
+ * PC, Laptop
  **/
 .content-area {
   float: left;
@@ -763,10 +754,6 @@ object {
   height: auto; }
 
 /**
- * Why use SASS?
- * - mixins!
- **/
-/**
  * media queries
  **/
 @media screen and (min-width: 200px) and (max-width: 700px) {
@@ -783,6 +770,8 @@ object {
   .site-footer {
     clear: both;
     width: 100%; }
+  img {
+    max-width: 100%; }
   body {
     font-size: 123%; } }
 
