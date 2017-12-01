@@ -776,14 +776,9 @@ object {
     font-size: 123%; } }
 
 /*! TYPOGRAPHY */
-/**
- * Google Fonts
- **/
-/* Header */
 .site-branding h1 {
   font-family: "Sonsie One", cursive; }
 
-/* Headings */
 h1, h2 {
   font-family: "Jockey One", sans-serif; }
 
@@ -802,7 +797,9 @@ h3, h4, h5, h6 {
   font-weight: bold;
   font-size: small; }
 
-/* The Site Name */
+.widget ul {
+  padding: 0; }
+
 .site-title {
   font-family: "Sonsie One", cursive;
   font-size: 2.5rem;
@@ -810,7 +807,6 @@ h3, h4, h5, h6 {
   .site-title a {
     text-decoration: none; }
 
-/* The Site Tag Line */
 .site-description {
   font-family: "Jockey One", sans-serif;
   font-size: small;
@@ -843,7 +839,6 @@ figcaption {
   font-size: small; }
 
 .post-edit-link, .post-edit-link:visited, .comments-link:visited {
-  /* btn for edit */
   font-size: small; }
 
 .posted-on {
@@ -882,6 +877,66 @@ footer {
 .tag-cloud-link {
   font-family: "Jockey One", sans-serif;
   color: #ce0000; }
+
+.entry-content p, .entry-content dd {
+  max-width: 40rem; }
+
+.entry-content ul {
+  list-style-type: square; }
+  .entry-content ul li {
+    max-width: 35rem; }
+
+#wp-calendar {
+  border: 2px solid #21759b;
+  box-shadow: 3px 5px 9px #ccc; }
+  #wp-calendar #today {
+    background-color: #21759b; }
+    #wp-calendar #today a {
+      color: #fff; }
+    #wp-calendar #today:hover {
+      backgroun-color: #82878c; }
+  #wp-calendar caption {
+    background-color: #21759b;
+    color: #fff; }
+  #wp-calendar tr:nth-child(even) {
+    background-color: #ccc; }
+  #wp-calendar th {
+    background-color: #21759b;
+    color: #fff; }
+  #wp-calendar td {
+    text-align: center; }
+    #wp-calendar td a {
+      background-color: #21759b;
+      color: #fff;
+      text-decoration: none; }
+  #wp-calendar tfoot {
+    background-color: #21759b; }
+
+/* HTML TAGS AND FORMATTING */
+table {
+  border: 1px solid #21759b;
+  box-shadow: 3px 5px 9px #ccc; }
+  table thead {
+    background-color: #21759b;
+    color: #fff; }
+  table tr:nth-child(even) {
+    background-color: #ccc; }
+  table th {
+    background-color: #21759b;
+    color: #fff; }
+    table th a {
+      color: #fff; }
+  table tbody th {
+    background-color: #fff;
+    color: #21759b; }
+    table tbody th a {
+      color: #21759b; }
+  table td {
+    text-align: center; }
+    table td a {
+      background-color: #21759b;
+      color: #fff;
+      text-decoration: none; }
 
 /**
  * Navigation Styles

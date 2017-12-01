@@ -1,24 +1,28 @@
 /*! TYPOGRAPHY */
 
-/**
- * Google Fonts
- **/
+// Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Antic|Jockey+One|Sonsie+One');
 
-
 // FONT VARIABLES
-$font-display: 'Sonsie One', cursive;
-$font-normal: 'Antic', sans-serif;
-$font-manchet: 'Jockey One', sans-serif;
+$font-display: 	'Sonsie One', cursive;
+$font-normal: 	'Antic', sans-serif;
+$font-manchet: 	'Jockey One', sans-serif;
 
 // Font colors
-$red:			#ce0000;
-$blue:			#4169e1;
+$red:					#ce0000;
+$blue:				#4169e1;
 $darkgreen: 	#21759b;
 $darkgrey:		#82878c;
-;
+$white:				#fff;
 
-/* Header */
+// reading
+$list-width:	35rem;
+$text-width:	40rem;
+
+// decorations
+$shadow:			#ccc;
+
+// header and logo area
 .site-branding {
 
 	h1 {
@@ -31,19 +35,18 @@ $darkgrey:		#82878c;
 	}
 }
 
-/* Headings */
-
-// display font
+// Two display fonts
 h1,h2 {
 	font-family: $font-manchet;
 }
 
-// readable font
+// Then in the copy
 h3,h4,h5,h6 {
 	font-family: $font-normal;
 	font-weight: bold;
 }
 
+// titles
 .entry-title, .page-title {
 	font-family: $font-manchet;
 	font-weight: bold;
@@ -52,14 +55,22 @@ h3,h4,h5,h6 {
 	}
 }
 
+// widgets
 .widget-title, .site-info, .posted-on {
 	font-family: $font-normal;
 	font-weight: bold;
 	font-size: small;
 }
 
+// widget lists
+.widget {
+		ul {
+	    padding: 0
+		}
+}
 
-/* The Site Name */
+
+// site name
 .site-title {
  	font-family: $font-display;
  	font-size: 2.5rem;
@@ -71,7 +82,7 @@ h3,h4,h5,h6 {
 }
 
 
-/* The Site Tag Line */
+// The Site Tag Line
 .site-description {
 	font-family: $font-manchet;
 	font-size: small;
@@ -111,21 +122,24 @@ figcaption {
 	font-style: italic;
 }
 
+// categories and tag links
 .cat-links, .tags-links {
 	font-family: $font-normal;
 	font-size: small;
 }
 
+// edit button
 .post-edit-link {
-	/* btn for edit */
 	font-size: small;
 }
 
+// post or page date
 .posted-on {
 	font-family: $font-normal;
 	font-size: small;
 }
 
+// ye footer
 footer {
 	background-color: #000;
 	color: #fff;
@@ -150,6 +164,7 @@ footer {
 	}
 }
 
+// post or page title colors
 .entry-title {
 	color: $darkgreen;	
 	
@@ -158,6 +173,7 @@ footer {
 	}
 }
 
+// post or page footer
 .entry-footer {
 	background-color: #fff;
 	color: #000;
@@ -166,18 +182,116 @@ footer {
 	margin-bottom: 2rem;
 }
 
+// edit a post
 .post-edit-link, .comments-link {
 	margin-left: 2rem;
-	//color: #fff;
 	
 	&:visited {
 		@extend .post-edit-link;	
 	}
 }
 
-
+// ye tag cloud widget
 .tag-cloud-link {
 	font-family: $font-manchet;
 	color: $red;
 }
+
+// width: lists, paragraphs etc.
+.entry-content {
+	p, dd {
+		max-width: $text-width;
+	}
+
+	ul {
+		list-style-type: square;
+
+		li {
+			max-width: $list-width;
+		}
+	}
+}
+
+
+// WIDGETS
+// wp-calendar widget
+#wp-calendar {
+	border: 2px solid $darkgreen;
+	box-shadow: 3px 5px 9px $shadow; // dropshadow
+
+	#today {
+		background-color: $darkgreen;
+		a {	color: $white; }
+		&:hover { backgroun-color: $darkgrey; }
+	}
+
+	caption {
+		background-color: $darkgreen;
+		color: $white;	
+	}
+
+	tr:nth-child(even) {
+		  background-color: $shadow;
+	}
+
+	th {
+		background-color: $darkgreen;
+		color: $white;	
+	}
+
+	td {
+		text-align: center;
+		a { background-color: $darkgreen;
+				color: $white; 
+				text-decoration: none;	
+			}
+	}
+
+	tfoot {
+		background-color: $darkgreen;
+	}
+
+}
+
+/* HTML TAGS AND FORMATTING */
+
+// tables
+table {
+	border: 1px solid $darkgreen;
+	box-shadow: 3px 5px 9px $shadow; // dropshadow
+
+	thead {
+		background-color: $darkgreen;
+		color: $white;
+	}	
+
+	tr:nth-child(even) {
+		  background-color: $shadow;
+	}
+
+	th {
+		background-color: $darkgreen;
+		color: $white;	
+			a { color: $white; }
+	}
+
+	tbody { 
+
+		th {
+			background-color: $white;
+			color: $darkgreen;	
+			a { color: $darkgreen; }
+		}
+	}
+
+	td {
+		text-align: center;
+		a { background-color: $darkgreen;
+				color: $white; 
+				text-decoration: none;	
+			}
+	}
+
+} // table
+
 

@@ -157,7 +157,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 /**
- * Custom header image
+ * new Custom header image
  **/
 $args = array(
 	'flex-width'    => true,
