@@ -725,10 +725,11 @@ object {
 
 /**
  * line length
- **/
+ 
 #main, #secondary {
-  padding: 2rem; }
-
+	padding: 2rem;
+}
+**/
 /**
  * PC, Laptop
  **/
@@ -756,13 +757,13 @@ object {
 /**
  * media queries
  **/
-@media screen and (min-width: 200px) and (max-width: 700px) {
+@media screen and (min-width: 100px) and (max-width: 760px) {
   .content-area {
     float: left;
-    margin: 0 -25% 0 0;
+    margin: 0 0 0 0;
     width: 100%; }
   .site-main {
-    margin: 0 25% 0 0; }
+    margin: 0 0 0 0; }
   .site-content .widget-area {
     clear: both;
     overflow: hidden;
@@ -787,10 +788,15 @@ h3, h4, h5, h6 {
   font-weight: bold; }
 
 .entry-title, .page-title {
+  color: black;
   font-family: "Jockey One", sans-serif;
   font-weight: bold; }
   .entry-title a, .page-title a {
+    color: black;
     text-decoration: none; }
+
+.entry-content, .entry-meta {
+  padding: 2rem; }
 
 .widget-title, .site-info, .posted-on {
   font-family: "Antic", sans-serif;
@@ -804,21 +810,25 @@ h3, h4, h5, h6 {
   font-family: "Sonsie One", cursive;
   font-size: 2.5rem;
   text-align: center; }
-  .site-title a {
-    text-decoration: none; }
+  .site-title a, .site-title a:visited {
+    text-decoration: none;
+    color: #21759b; }
 
 .site-description {
   font-family: "Jockey One", sans-serif;
-  font-size: small;
   text-align: center; }
 
 /* Paragraphs, Lists etc. */
 p {
   font-family: "Antic", sans-serif;
   text-align: justify; }
+  p a {
+    color: #21759b; }
+  p a:hover {
+    color: black; }
 
 ul, ol {
-  margin: 0 0 0 1.5em; }
+  margin: 0 0 0 1.5rem; }
 
 ul li {
   font-family: "Antic", sans-serif;
@@ -846,6 +856,7 @@ figcaption {
   font-size: small; }
 
 footer {
+  height: 7rem;
   background-color: #000;
   color: #fff; }
   footer a {
@@ -853,16 +864,27 @@ footer {
   footer:visited {
     color: silver; }
   footer .site-info {
-    padding-top: .3rem;
-    padding-bottom: .7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center; }
     footer .site-info a {
       color: silver; }
 
 .entry-title {
-  color: #21759b; }
+  /*
+	background-color: $darkgreen;
+	box-shadow: 3px 5px 9px $shadow; // dropshadow
+	border-radius: 15px 15px 15px 15px; // rounded corners
+	color: $white;
+	*/
+  color: black;
+  font-size: 3rem;
+  display: block;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
   .entry-title a {
-    color: #21759b; }
+    color: black; }
 
 .entry-footer {
   background-color: #fff;
@@ -876,14 +898,23 @@ footer {
 
 .tag-cloud-link {
   font-family: "Jockey One", sans-serif;
-  color: #ce0000; }
+  color: #21759b;
+  text-decoration: none; }
 
-.entry-content p, .entry-content dd {
+.entry-content p, .entry-content dd, .entry-content .posted-on, .entry-content .author {
   max-width: 40rem; }
+  .entry-content p a, .entry-content dd a, .entry-content .posted-on a, .entry-content .author a {
+    text-decoration: none; }
 
 .entry-content ul {
-  list-style-type: square; }
+  list-style-type: square;
+  padding: .2rem; }
   .entry-content ul li {
+    max-width: 35rem; }
+
+.entry-content ol {
+  padding: .2rem; }
+  .entry-content ol li {
     max-width: 35rem; }
 
 #wp-calendar {
@@ -912,6 +943,16 @@ footer {
   #wp-calendar tfoot {
     background-color: #21759b; }
 
+.widget-title {
+  font-size: 2rem; }
+
+.widget {
+  font-size: normal; }
+  .widget ul li a {
+    color: #21759b; }
+  .widget ul li a:hover {
+    color: #000; }
+
 /* HTML TAGS AND FORMATTING */
 table {
   border: 1px solid #21759b;
@@ -932,16 +973,49 @@ table {
     table tbody th a {
       color: #21759b; }
   table td {
-    text-align: center; }
+    text-align: left; }
     table td a {
       background-color: #21759b;
       color: #fff;
       text-decoration: none; }
 
+pre, code {
+  padding: 5px;
+  font-family: 'Courier New', 'Lucida Console';
+  display: block;
+  box-shadow: 3px 5px 9px #ccc;
+  background-color: #21759b;
+  color: #fff; }
+
+.nav-next a,
+.nav-previous a,
+.url,
+.posted-on a {
+  text-decoration: none;
+  color: #21759b; }
+
+#commentform p a {
+  color: #21759b;
+  text-decoration: none;
+  display: block; }
+
+#commentform p a:hover {
+  color: black; }
+
 /**
  * Navigation Styles
  **/
 /* colors */
+#primary-menu {
+  padding-top: 4rem;
+  padding-botto: 2rem; }
+
+.nav-menu {
+  position: relative;
+  top: -2rem; }
+  .nav-menu li {
+    margin-left: 2rem; }
+
 .main-navigation, .main-navigation a {
   background-color: #000;
   color: #fff; }
@@ -950,7 +1024,7 @@ table {
 
 /* navigation */
 .menu-item {
-  margin-right: .8rem;
+  margin-right: .4rem;
   background-color: #000;
   color: #fff; }
   .menu-item:hover {

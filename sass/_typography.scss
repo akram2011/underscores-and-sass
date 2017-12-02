@@ -48,11 +48,20 @@ h3,h4,h5,h6 {
 
 // titles
 .entry-title, .page-title {
+	color: black;
+	//background-color: $darkgreen;
 	font-family: $font-manchet;
 	font-weight: bold;
 	a {
+		color: black;
 		text-decoration: none;	
 	}
+}
+
+// content
+.entry-content, .entry-meta {
+	padding:2rem;
+
 }
 
 // widgets
@@ -76,8 +85,9 @@ h3,h4,h5,h6 {
  	font-size: 2.5rem;
  	text-align: center;
  	
- 	a {
-		text-decoration: none; 	
+ 	a, a:visited {
+		text-decoration: none;
+		color: $darkgreen; 	
  	}
 }
 
@@ -85,8 +95,8 @@ h3,h4,h5,h6 {
 // The Site Tag Line
 .site-description {
 	font-family: $font-manchet;
-	font-size: small;
-	text-align: center;	
+	//font-size: small;
+	text-align: center;
 }
 
 
@@ -94,11 +104,17 @@ h3,h4,h5,h6 {
 p {
 	font-family: $font-normal;
 	text-align: justify;
+
+	a {
+		color: $darkgreen;
+	}
+	a:hover { color:black; }
 }
 
 ul, ol {
-	margin: 0 0 0 1.5em;
+	margin: 0 0 0 1.5rem;
 }
+
 
 ul li {
 	font-family: $font-normal;
@@ -141,11 +157,11 @@ figcaption {
 
 // ye footer
 footer {
+	height: 7rem;
 	background-color: #000;
 	color: #fff;
 
 	a {
-			//color: silver;
 			text-decoration: none;		
 		}
 	&:visited {
@@ -153,8 +169,8 @@ footer {
 		}
 
 	.site-info {
-		padding-top: .3rem;
-		padding-bottom: .7rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 		text-align: center;
 		
 		a {
@@ -166,10 +182,22 @@ footer {
 
 // post or page title colors
 .entry-title {
-	color: $darkgreen;	
+	/*
+	background-color: $darkgreen;
+	box-shadow: 3px 5px 9px $shadow; // dropshadow
+	border-radius: 15px 15px 15px 15px; // rounded corners
+	color: $white;
+	*/
+	color: black;
+	font-size: 3rem;
+	display: block;
+	padding-left: 2rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	//text-align: center;
 	
 	a {
-		color: $darkgreen;
+		color: black;
 	}
 }
 
@@ -194,22 +222,37 @@ footer {
 // ye tag cloud widget
 .tag-cloud-link {
 	font-family: $font-manchet;
-	color: $red;
+	color: $darkgreen;
+	text-decoration: none;
 }
 
 // width: lists, paragraphs etc.
 .entry-content {
-	p, dd {
+	p, dd, .posted-on, .author {
 		max-width: $text-width;
+
+		a {
+			text-decoration:none;		
+		}
 	}
 
 	ul {
 		list-style-type: square;
+		padding: .2rem;
 
 		li {
 			max-width: $list-width;
 		}
 	}
+
+	ol {
+			padding: .2rem;
+
+			li {
+				max-width: $list-width;
+			}
+	}
+
 }
 
 
@@ -253,6 +296,23 @@ footer {
 
 }
 
+// widgets in general
+.widget-title {
+	font-size: 2rem;
+}
+
+
+.widget {
+	font-size: normal;
+
+	ul {
+		li {
+			a { color: $darkgreen; }
+			a:hover { color: #000; }
+		}
+	}
+}
+
 /* HTML TAGS AND FORMATTING */
 
 // tables
@@ -285,7 +345,7 @@ table {
 	}
 
 	td {
-		text-align: center;
+		text-align: left;
 		a { background-color: $darkgreen;
 				color: $white; 
 				text-decoration: none;	
@@ -294,4 +354,34 @@ table {
 
 } // table
 
+// code
+pre, code {
+	padding: 5px;
+	font-family: 'Courier New', 'Lucida Console';
+	display: block;
+	box-shadow: 3px 5px 9px $shadow; // dropshadow
+	background-color: $darkgreen;
+	color: $white;
+}
+
+// nav next previous
+.nav-next a, 
+.nav-previous a,
+.url,
+.posted-on a {
+	text-decoration: none;
+	color: $darkgreen;
+}
+
+// commentform
+#commentform {
+	p {
+			a {
+				color: $darkgreen;
+				text-decoration: none;
+				display: block;
+			}
+			a:hover { color:black; }
+		}
+	}
 

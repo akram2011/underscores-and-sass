@@ -2,11 +2,11 @@
 @mixin responsive() {
 	.content-area {
 		float: left;
-		margin: 0 -25% 0 0;
+		margin: 0 0 0 0;
 		width: 100%;
 	}
 	.site-main {
-		margin: 0 25% 0 0;
+		margin: 0 0 0 0;
 	}
 	.site-content .widget-area {
 		clear: both;
@@ -24,10 +24,11 @@
 
 /**
  * line length
- **/
+ 
 #main, #secondary {
 	padding: 2rem;
 }
+**/
 
 /**
  * PC, Laptop
@@ -62,7 +63,7 @@
 /**
  * media queries
  **/
-@media screen and (min-width: 200px) and (max-width: 700px) {
+@media screen and (min-width: 100px) and (max-width: 760px) {
 	@include responsive(); // sidebar to bottom
 	body {
 		font-size: 123%;
