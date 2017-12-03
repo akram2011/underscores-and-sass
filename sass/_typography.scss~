@@ -371,7 +371,7 @@ pre, code {
 .posted-on a {
 	text-decoration: none;
 	color: $darkgreen;
-	padding-right: 2rem;
+	//padding: 2rem;
 }
 
 // commentform

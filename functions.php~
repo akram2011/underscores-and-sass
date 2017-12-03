@@ -168,7 +168,7 @@ add_theme_support( 'custom-header', $args );
 
 
 /**
- * Font awesome
+ * Fontawesome
  **/
  function enqueue_our_required_stylesheets(){
     wp_enqueue_style('font-awesome', 'https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css');

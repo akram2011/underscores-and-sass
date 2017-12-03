@@ -38,11 +38,11 @@ jQuery(document).ready(function($) {
 		
 	// font awesome before
 	$('.nav-previous a')
-		.prepend('<i class="fa fa-chevron-circle-left" aria-hidden="true" style="margin-left:2rem;font-size:2rem;"></i> ');
+		.prepend('<i class="fa fa-chevron-circle-left" aria-hidden="true" style="margin-left:1.2rem;font-size:2rem;"></i> ');
 
 	// font awesome next
 	$('.nav-next a')
-		.append(' <i class="fa fa-chevron-circle-right" aria-hidden="true" style="font-size:2rem;"></i>');
+		.append(' <i class="fa fa-chevron-circle-right" aria-hidden="true" style="font-size:1.2rem;"></i>');
 
 })
 

@@ -724,13 +724,6 @@ object {
   display: block; }
 
 /**
- * line length
- 
-#main, #secondary {
-	padding: 2rem;
-}
-**/
-/**
  * PC, Laptop
  **/
 .content-area {
@@ -796,7 +789,7 @@ h3, h4, h5, h6 {
     text-decoration: none; }
 
 .entry-content, .entry-meta {
-  padding: 2rem; }
+  padding-left: 2rem; }
 
 .widget-title, .site-info, .posted-on {
   font-family: "Antic", sans-serif;
@@ -871,20 +864,17 @@ footer {
       color: silver; }
 
 .entry-title {
-  /*
-	background-color: $darkgreen;
-	box-shadow: 3px 5px 9px $shadow; // dropshadow
-	border-radius: 15px 15px 15px 15px; // rounded corners
-	color: $white;
-	*/
   color: black;
   font-size: 3rem;
   display: block;
   padding-left: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding-top: 3rem; }
   .entry-title a {
     color: black; }
+
+table {
+  width: 90%;
+  margin: auto; }
 
 .entry-footer {
   background-color: #fff;
@@ -980,7 +970,8 @@ table {
       text-decoration: none; }
 
 pre, code {
-  padding: 5px;
+  padding: .5rem;
+  margin: .5rem;
   font-family: 'Courier New', 'Lucida Console';
   display: block;
   box-shadow: 3px 5px 9px #ccc;
@@ -992,7 +983,8 @@ pre, code {
 .url,
 .posted-on a {
   text-decoration: none;
-  color: #21759b; }
+  color: #21759b;
+  padding-right: 2rem; }
 
 #commentform p a {
   color: #21759b;
@@ -1001,6 +993,9 @@ pre, code {
 
 #commentform p a:hover {
   color: black; }
+
+.wp-caption {
+  margin-right: 2rem; }
 
 /**
  * Navigation Styles
