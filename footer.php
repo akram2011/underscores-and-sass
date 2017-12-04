@@ -15,15 +15,19 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'petj-17' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'CMS: %s', 'petj-17' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
+			<!-- copyright icon font awesome -->
+			<i class="fa fa-creative-commons fa-2x" aria-hidden="true"></i> by Per Thyjaer Jensen <?php echo date('Y'); ?>. <a href="https://creativecommons.org/licenses/by-sa/4.0/"> License: Attribution-NonCommercial-ShareAlike </a>  <br>		
+		
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'petj-17' ) ); ?>">
+			<!-- wordpress icon font awesome -->
+			<i class="fa fa-wordpress fa-2x" aria-hidden="true"></i>			
 			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( '&copy; Per Thykjaer Jensen 2017. Theme: %1$s based on %2$s.', 'petj-17' ), 'petj-17', '<a href="https://github.com/asathoor/underscores-and-sass">underscores-and-sass</a>' );
-			?>
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'This %s production is based on Underscores.', 'petj-17' ), 'WordPress' );
+			?></a>
+			<br>
+			 <i class="fa fa-github fa-2x" aria-hidden="true"></i> Github repository: <a href="https://github.com/asathoor/underscores-and-sass">Underscores-and-sass</a>
+			
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
