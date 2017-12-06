@@ -849,7 +849,8 @@ figcaption {
   font-size: small; }
 
 footer {
-  height: 7rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   background-color: #000;
   color: #fff; }
   footer a {
@@ -972,11 +973,18 @@ table {
 pre, code {
   padding: .5rem;
   margin: .5rem;
+  width: 35rem;
+  max-width: 100%;
   font-family: 'Courier New', 'Lucida Console';
   display: block;
   box-shadow: 3px 5px 9px #ccc;
   background-color: #21759b;
   color: #fff; }
+
+blockquote {
+  width: 35rem;
+  max-width: 100%;
+  box-shadow: 3px 5px 9px #ccc; }
 
 .nav-next a,
 .nav-previous a,
@@ -996,6 +1004,11 @@ pre, code {
 
 .wp-caption {
   margin-right: 2rem; }
+
+#comments {
+  width: 35rem;
+  max-width: 100%;
+  padding-left: 2rem; }
 
 /**
  * Navigation Styles

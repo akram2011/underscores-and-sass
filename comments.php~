@@ -21,13 +21,15 @@ if ( post_password_required() ) {
 ?>
 
 <div id="comments" class="comments-area">
-	<!-- fontawesome: comments icon --> 
-			<i class="fa fa-comments fa-2x" aria-hidden="true"></i> &nbsp;
+	
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 		
+			<!-- fontawesome: comments icon --> 
+			<i class="fa fa-comments fa-2x" aria-hidden="true"></i> &nbsp;
+			
 			<?php
 			$comment_count = get_comments_number();
 			if ( 1 === $comment_count ) {

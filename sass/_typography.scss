@@ -157,7 +157,8 @@ figcaption {
 
 // ye footer
 footer {
-	height: 7rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
 	background-color: #000;
 	color: #fff;
 
@@ -357,12 +358,23 @@ table {
 pre, code {
 	padding: .5rem;
 	margin: .5rem;
+	width: $list-width;
+	max-width: 100%;
 	font-family: 'Courier New', 'Lucida Console';
 	display: block;
 	box-shadow: 3px 5px 9px $shadow; // dropshadow
 	background-color: $darkgreen;
 	color: $white;
 }
+
+
+// quotes
+blockquote {
+	width: $list-width;
+	max-width: 100%;
+	box-shadow: 3px 5px 9px $shadow; // dropshadow
+}
+
 
 // nav next previous
 .nav-next a, 
@@ -390,4 +402,11 @@ pre, code {
 // illustrations
 .wp-caption {
 	margin-right: 2rem;
+}
+
+// comments
+#comments {
+	width: $list-width;
+	max-width: 100%;
+	padding-left: 2rem;
 }
