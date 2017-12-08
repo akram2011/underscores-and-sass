@@ -18,6 +18,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+/*! ABRACADABRA styles */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -750,7 +751,15 @@ object {
 /**
  * media queries
  **/
+/*
 @media screen and (min-width: 100px) and (max-width: 760px) {
+	@include responsive(); // sidebar to bottom 
+}
+*/
+/* new media queries */
+@media all and (min-width: 960px) and (max-width: 1024px) {
+  body {
+    font-size: 100%; }
   .content-area {
     float: left;
     margin: 0 0 0 0;
@@ -765,9 +774,121 @@ object {
     clear: both;
     width: 100%; }
   img {
-    max-width: 100%; }
+    max-width: 100%; } }
+
+@media all and (min-width: 801px) and (max-width: 959px) {
   body {
-    font-size: 123%; } }
+    font-size: 100%; }
+  .content-area {
+    float: left;
+    margin: 0 0 0 0;
+    width: 100%; }
+  .site-main {
+    margin: 0 0 0 0; }
+  .site-content .widget-area {
+    clear: both;
+    overflow: hidden;
+    width: 100%; }
+  .site-footer {
+    clear: both;
+    width: 100%; }
+  img {
+    max-width: 100%; } }
+
+@media all and (min-width: 769px) and (max-width: 800px) {
+  body {
+    font-size: "103%"; }
+  .content-area {
+    float: left;
+    margin: 0 0 0 0;
+    width: 100%; }
+  .site-main {
+    margin: 0 0 0 0; }
+  .site-content .widget-area {
+    clear: both;
+    overflow: hidden;
+    width: 100%; }
+  .site-footer {
+    clear: both;
+    width: 100%; }
+  img {
+    max-width: 100%; } }
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+  body {
+    font-size: 100%; }
+  .content-area {
+    float: left;
+    margin: 0 0 0 0;
+    width: 100%; }
+  .site-main {
+    margin: 0 0 0 0; }
+  .site-content .widget-area {
+    clear: both;
+    overflow: hidden;
+    width: 100%; }
+  .site-footer {
+    clear: both;
+    width: 100%; }
+  img {
+    max-width: 100%; } }
+
+@media all and (min-width: 481px) and (max-width: 568px) {
+  body {
+    font-size: 100%; }
+  .content-area {
+    float: left;
+    margin: 0 0 0 0;
+    width: 100%; }
+  .site-main {
+    margin: 0 0 0 0; }
+  .site-content .widget-area {
+    clear: both;
+    overflow: hidden;
+    width: 100%; }
+  .site-footer {
+    clear: both;
+    width: 100%; }
+  img {
+    max-width: 100%; } }
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  body {
+    font-size: 100%; }
+  .content-area {
+    float: left;
+    margin: 0 0 0 0;
+    width: 100%; }
+  .site-main {
+    margin: 0 0 0 0; }
+  .site-content .widget-area {
+    clear: both;
+    overflow: hidden;
+    width: 100%; }
+  .site-footer {
+    clear: both;
+    width: 100%; }
+  img {
+    max-width: 100%; } }
+
+@media all and (min-width: 0px) and (max-width: 320px) {
+  body {
+    font-size: 100%; }
+  .content-area {
+    float: left;
+    margin: 0 0 0 0;
+    width: 100%; }
+  .site-main {
+    margin: 0 0 0 0; }
+  .site-content .widget-area {
+    clear: both;
+    overflow: hidden;
+    width: 100%; }
+  .site-footer {
+    clear: both;
+    width: 100%; }
+  img {
+    max-width: 100%; } }
 
 /*! TYPOGRAPHY */
 .site-branding h1 {

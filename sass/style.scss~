@@ -3,7 +3,7 @@ Theme Name: Abracadabra
 Theme URI: https://github.com/asathoor/underscores-and-sass
 Author: Per Thykjaer Jensen and Underscores.me
 Author URI: http://multimusen.dk
-Description: The 2017/18 theme for WordPress. Features: SASS, Gulp, Bower, Font Awesome, jQuery.
+Description: The 2017/18 theme for WordPress based on Underscores. Features: SASS, Gulp, Bower, Font Awesome, jQuery.
 Version: 0.5
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -18,6 +18,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
+/*! abracadabra styles */
 
 @import 'sstyles';		// from _S
 @import 'responsive'; 	// responsive

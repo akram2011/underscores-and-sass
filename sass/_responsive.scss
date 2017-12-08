@@ -1,5 +1,9 @@
 // responsive mixin
-@mixin responsive() {
+@mixin responsive( $fontsize ) {
+	body {
+		font-size: $fontsize;
+	}
+
 	.content-area {
 		float: left;
 		margin: 0 0 0 0;
@@ -56,9 +60,37 @@
 /**
  * media queries
  **/
+/*
 @media screen and (min-width: 100px) and (max-width: 760px) {
-	@include responsive(); // sidebar to bottom
-	body {
-		font-size: 123%;
-	}
+	@include responsive(); // sidebar to bottom 
+}
+*/
+
+/* new media queries */
+@media all and (min-width:960px) and (max-width: 1024px) {
+  @include responsive( 100%  ); // sidebar to bottom); // sidebar to bottom
+}
+
+@media all and (min-width:801px) and (max-width: 959px) {
+	@include responsive( 100%  ); // sidebar to bottom); // sidebar to bottom
+}
+
+@media all and (min-width:769px) and (max-width: 800px) {
+ @include responsive( '103%'  ); // sidebar to bottom); // sidebar to bottom
+}
+
+@media all and (min-width:569px) and (max-width: 768px) {
+   @include responsive( 100%  ); // sidebar to bottom); // sidebar to bottom
+}
+
+@media all and (min-width:481px) and (max-width: 568px) {
+    @include responsive( 100%  ); // sidebar to bottom); // sidebar to bottom
+}
+
+@media all and (min-width:321px) and (max-width: 480px) {
+   @include responsive( 100%  ); // sidebar to bottom); // sidebar to bottom
+}
+
+@media all and (min-width:0px) and (max-width: 320px) {
+   @include responsive( 100%  ); // sidebar to bottom); // sidebar to bottom
 }
