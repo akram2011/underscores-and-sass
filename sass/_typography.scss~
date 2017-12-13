@@ -18,6 +18,7 @@ $white:				#fff;
 // reading
 $list-width:	35rem;
 $text-width:	40rem;
+$margin:		2rem;
 
 // decorations
 $shadow:			#ccc;
@@ -193,6 +194,11 @@ footer {
 	a {
 		color: black;
 	}
+}
+
+.page-title {
+	@extend .entry-title;
+	font-size: 2rem;
 }
 
 // tables
@@ -409,4 +415,10 @@ blockquote {
 	width: $list-width;
 	max-width: 100%;
 	padding-left: 2rem;
+}
+
+.entry-footer {
+	max-width: $text-width;
+	text-align: left;
+	padding-left: $margin; 
 }
