@@ -71,29 +71,28 @@
 /*!
  * MEDIA QUERIES
  **/
-
 @media all and (min-width:960px) and (max-width: 1024px) {
-  @include responsive( 100%, 2rem  ); // sidebar to bottom); // sidebar to bottom
+  @include responsive( 100%, 2rem  ); // sidebar to bottom);
 }
 
 @media all and (min-width:801px) and (max-width: 959px) {
-	@include responsive( 100%,2rem  ); // sidebar to bottom); // sidebar to bottom
+	@include responsive( 100%,2rem  ); // sidebar to bottom);
 }
 
 @media all and (min-width:769px) and (max-width: 800px) {
- @include responsive( 103%,2rem  ); // sidebar to bottom); // sidebar to bottom
+ @include responsive( 103%,2rem  ); // sidebar to bottom);
 }
 
 @media all and (min-width:569px) and (max-width: 768px) {
-   @include responsive( 100%,1.5rem  ); // sidebar to bottom); // sidebar to bottom
+   @include responsive( 100%,1.5rem  ); // sidebar to bottom);
 }
 
 @media all and (min-width:481px) and (max-width: 568px) {
-    @include responsive( 100%,1.3rem  ); // sidebar to bottom); // sidebar to bottom
+    @include responsive( 100%,1.3rem  ); // sidebar to bottom);
 }
 
 @media all and (min-width:321px) and (max-width: 480px) {
-   @include responsive( 100%,1rem  ); // sidebar to bottom); // sidebar to bottom
+   @include responsive( 100%,1rem  ); // sidebar to bottom);
 }
 
 @media all and (min-width:0px) and (max-width: 320px) {
