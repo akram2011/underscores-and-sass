@@ -218,7 +218,7 @@ table {
 
 // edit a post
 .post-edit-link, .comments-link {
-	margin-left: 2rem;
+	display:block;
 	
 	&:visited {
 		@extend .post-edit-link;	
@@ -421,4 +421,13 @@ blockquote {
 	max-width: $text-width;
 	text-align: left;
 	padding-left: $margin; 
+}
+
+// categories, tags ... 
+
+.cat-links, .tags-links {
+	font-weight:bold;
+	clear:both;
+	position:relative;
+	display:block;
 }
