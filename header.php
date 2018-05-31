@@ -27,8 +27,8 @@
 
 	<header id="masthead" class="site-header">
 	
-		<!-- custom header image -->
-		<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="logo">	
+		<!-- custom header image: disabled -->
+		<!-- img src="<?php //header_image(); ?>" height="<?php //echo get_custom_header()->height; ?>" width="<?php //echo get_custom_header()->width; ?>" alt="logo" -->	
 	
 		<div class="site-branding">
 			<?php
