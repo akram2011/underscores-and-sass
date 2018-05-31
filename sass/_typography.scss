@@ -8,6 +8,7 @@ $font-display: 	'Sonsie One', cursive;
 $font-normal: 	'Antic', sans-serif;
 $font-manchet: 	'Jockey One', sans-serif;
 
+
 // Font colors
 $red:					#ce0000;
 $blue:				#4169e1;
@@ -15,13 +16,16 @@ $darkgreen: 	#21759b;
 $darkgrey:		#82878c;
 $white:				#fff;
 
+
 // reading
 $list-width:	35rem;
 $text-width:	40rem;
 $margin:		2rem;
 
+
 // decorations
 $shadow:			#ccc;
+
 
 // header and logo area
 .site-branding {
@@ -29,9 +33,9 @@ $shadow:			#ccc;
 	h1 {
 		font-family: $font-display;
 
-		a {
+		    a {
 		
-		}
+		    }
 	
 	}
 }

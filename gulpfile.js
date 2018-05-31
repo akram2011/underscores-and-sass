@@ -1,11 +1,13 @@
 'use strict';
 
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
+
 /* Gulp needs a default task, here it is: */
-gulp.task( 'default', [ 'sass:watch' ] )
+gulp.task( 'default', [ 'sass:watch' ] );
 
 
 /* SASS */
@@ -14,8 +16,7 @@ gulp.task('sass', function () {
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(sourcemaps.write('./maps'))
-  .pipe(gulp.dest('.'))
-  .pipe(browserSync.stream());
+  .pipe(gulp.dest('.'));
 });
 
 
