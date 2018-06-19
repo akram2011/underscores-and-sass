@@ -169,10 +169,8 @@ add_theme_support( 'custom-header', $args );
 
 /**
  * Font awesome
- * changed cdn source 20180619
- * old cdn stopped working
  **/
  function enqueue_our_required_stylesheets(){
-    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+    wp_enqueue_style('font-awesome', 'https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css');
 }
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
