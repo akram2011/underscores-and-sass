@@ -1,5 +1,5 @@
 /*!
-Theme Name: Abracadabra
+Theme Name: Underscores and SASS
 Theme URI: https://github.com/asathoor/underscores-and-sass
 Author: Per Thykjaer Jensen and Underscores.me
 Author URI: http://multimusen.dk
@@ -18,6 +18,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+/*! Styles from _S  */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -724,7 +725,7 @@ object {
 .gallery-caption {
   display: block; }
 
-/*! ABRACADABRA CSS */
+/*! Custom Styles */
 /*! TYPOGRAPHY */
 .site-branding h1 {
   font-family: "Sonsie One", cursive; }
@@ -1026,14 +1027,12 @@ blockquote {
   width: 100%;
   height: auto; }
 
-/*!
- * MEDIA QUERIES
- **/
+/*! MEDIA QUERIES */
 @media all and (min-width: 960px) and (max-width: 1024px) {
   body {
     font-size: 100%; }
   p {
-    paddin: 5px; }
+    padding: 5px; }
   .site-branding a {
     font-size: 2rem; }
   .content-area {
@@ -1056,7 +1055,7 @@ blockquote {
   body {
     font-size: 100%; }
   p {
-    paddin: 5px; }
+    padding: 5px; }
   .site-branding a {
     font-size: 2rem; }
   .content-area {
@@ -1079,7 +1078,7 @@ blockquote {
   body {
     font-size: 103%; }
   p {
-    paddin: 5px; }
+    padding: 5px; }
   .site-branding a {
     font-size: 2rem; }
   .content-area {
@@ -1102,7 +1101,7 @@ blockquote {
   body {
     font-size: 100%; }
   p {
-    paddin: 5px; }
+    padding: 5px; }
   .site-branding a {
     font-size: 1.5rem; }
   .content-area {
@@ -1125,7 +1124,7 @@ blockquote {
   body {
     font-size: 100%; }
   p {
-    paddin: 5px; }
+    padding: 5px; }
   .site-branding a {
     font-size: 1.3rem; }
   .content-area {
@@ -1148,7 +1147,7 @@ blockquote {
   body {
     font-size: 100%; }
   p {
-    paddin: 5px; }
+    padding: 5px; }
   .site-branding a {
     font-size: 1rem; }
   .content-area {
@@ -1171,7 +1170,7 @@ blockquote {
   body {
     font-size: 90%; }
   p {
-    paddin: 5px; }
+    padding: 5px; }
   .site-branding a {
     font-size: 0.8rem; }
   .content-area {

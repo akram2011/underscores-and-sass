@@ -1,5 +1,5 @@
 /*!
-Theme Name: Abracadabra
+Theme Name: Underscores and SASS
 Theme URI: https://github.com/asathoor/underscores-and-sass
 Author: Per Thykjaer Jensen and Underscores.me
 Author URI: http://multimusen.dk
@@ -19,10 +19,10 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+/* Styles from _S  */
 @import 'sstyles';		// from _S
 
-/*! ABRACADABRA styles */ 
-
+/* Partials */ 
 @import 'typography'; 	// typography
 @import 'navigation'; 	// navigation bar
 @import 'responsive'; 	// responsive

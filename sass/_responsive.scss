@@ -5,7 +5,7 @@
 	}
 	
 	p {
-		paddin: 5px;	
+		padding: 5px;	
 	}
 
 	.site-branding {
@@ -34,7 +34,7 @@
 	img {
 		max-width: 100%;
 	}
-} // end responsive
+} // end responsive mixin
 
 
 /**
@@ -67,9 +67,7 @@
 }
 
 
-/*!
- * MEDIA QUERIES
- **/
+/*! MEDIA QUERIES */
 @media all and (min-width:960px) and (max-width: 1024px) {
   @include responsive( 100%, 2rem  ); // sidebar to bottom);
 }
