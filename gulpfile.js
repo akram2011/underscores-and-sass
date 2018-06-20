@@ -1,26 +1,22 @@
-'use strict';
-
-
 var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
+var sass = require('gulp-sass')
 
+// test
+gulp.task('hello', function(){
+  console.log('gulping now');
+});
 
-/* Gulp needs a default task, here it is: */
-gulp.task( 'default', [ 'sass:watch' ] );
-
-
-/* SASS */
+// sass
 gulp.task('sass', function () {
- return gulp.src('./sass/**/*.scss')
-  .pipe(sourcemaps.init())
-  .pipe(sass().on('error', sass.logError))
-  .pipe(sourcemaps.write('./maps'))
-  .pipe(gulp.dest('.'));
+  return gulp.src('./sass/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('.'));
 });
 
-
-/* listening for changes changes */
+// sass watch
 gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('./sass/*.scss', ['sass']);
 });
+
+// default
+gulp.task('default',['sass:watch']);
