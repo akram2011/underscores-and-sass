@@ -34,7 +34,7 @@
 	img {
 		max-width: 100%;
 	}
-} // end responsive
+} // end responsive mixin
 
 
 /**

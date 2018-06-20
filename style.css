@@ -1027,17 +1027,19 @@ blockquote {
   width: 100%;
   height: auto; }
 
-/*! MEDIA QUERIES */
+/*! MEDIA QUERIES (mixin demo) */
 @media all and (min-width: 960px) and (max-width: 1024px) {
   body {
     font-size: 100%; }
   p {
-    padding: 5px; }
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
   .site-branding a {
     font-size: 2rem; }
   .content-area {
     float: left;
-    margin: 0 0 0 0;
+    margin: 0px 0px 0px 0px;
     width: 100%; }
   .site-main {
     margin: 0 0 0 0; }
@@ -1049,18 +1051,38 @@ blockquote {
     clear: both;
     width: 100%; }
   img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  body,
+  blockquote,
+  pre,
+  code,
+  .entry-content,
+  .entry-meta,
+  h1, h2, h3, h4, h5, h6,
+  .nav-menu,
+  li > ul,
+  li > ol,
+  .alignright, .post-edit-link, .post-edit-link:visited, .comments-link:visited, .comments-link {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; }
+  #menuButton {
+    background: #000;
+    color: #fff; }
+  footer .site-info {
+    text-align: left; } }
 
 @media all and (min-width: 801px) and (max-width: 959px) {
   body {
     font-size: 100%; }
   p {
-    padding: 5px; }
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
   .site-branding a {
     font-size: 2rem; }
   .content-area {
     float: left;
-    margin: 0 0 0 0;
+    margin: 0px 0px 0px 0px;
     width: 100%; }
   .site-main {
     margin: 0 0 0 0; }
@@ -1072,18 +1094,38 @@ blockquote {
     clear: both;
     width: 100%; }
   img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  body,
+  blockquote,
+  pre,
+  code,
+  .entry-content,
+  .entry-meta,
+  h1, h2, h3, h4, h5, h6,
+  .nav-menu,
+  li > ul,
+  li > ol,
+  .alignright, .post-edit-link, .post-edit-link:visited, .comments-link:visited, .comments-link {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; }
+  #menuButton {
+    background: #000;
+    color: #fff; }
+  footer .site-info {
+    text-align: left; } }
 
 @media all and (min-width: 769px) and (max-width: 800px) {
   body {
-    font-size: 103%; }
+    font-size: 110%; }
   p {
-    padding: 5px; }
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
   .site-branding a {
     font-size: 2rem; }
   .content-area {
     float: left;
-    margin: 0 0 0 0;
+    margin: 0px 0px 0px 0px;
     width: 100%; }
   .site-main {
     margin: 0 0 0 0; }
@@ -1095,18 +1137,38 @@ blockquote {
     clear: both;
     width: 100%; }
   img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  body,
+  blockquote,
+  pre,
+  code,
+  .entry-content,
+  .entry-meta,
+  h1, h2, h3, h4, h5, h6,
+  .nav-menu,
+  li > ul,
+  li > ol,
+  .alignright, .post-edit-link, .post-edit-link:visited, .comments-link:visited, .comments-link {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; }
+  #menuButton {
+    background: #000;
+    color: #fff; }
+  footer .site-info {
+    text-align: left; } }
 
 @media all and (min-width: 569px) and (max-width: 768px) {
   body {
-    font-size: 100%; }
+    font-size: 112%; }
   p {
-    padding: 5px; }
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
   .site-branding a {
     font-size: 1.5rem; }
   .content-area {
     float: left;
-    margin: 0 0 0 0;
+    margin: 0px 0px 0px 0px;
     width: 100%; }
   .site-main {
     margin: 0 0 0 0; }
@@ -1118,18 +1180,38 @@ blockquote {
     clear: both;
     width: 100%; }
   img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  body,
+  blockquote,
+  pre,
+  code,
+  .entry-content,
+  .entry-meta,
+  h1, h2, h3, h4, h5, h6,
+  .nav-menu,
+  li > ul,
+  li > ol,
+  .alignright, .post-edit-link, .post-edit-link:visited, .comments-link:visited, .comments-link {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; }
+  #menuButton {
+    background: #000;
+    color: #fff; }
+  footer .site-info {
+    text-align: left; } }
 
 @media all and (min-width: 481px) and (max-width: 568px) {
   body {
-    font-size: 100%; }
+    font-size: 123%; }
   p {
-    padding: 5px; }
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
   .site-branding a {
-    font-size: 1.3rem; }
+    font-size: 2.7rem; }
   .content-area {
     float: left;
-    margin: 0 0 0 0;
+    margin: 0px 0px 0px 0px;
     width: 100%; }
   .site-main {
     margin: 0 0 0 0; }
@@ -1141,18 +1223,38 @@ blockquote {
     clear: both;
     width: 100%; }
   img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  body,
+  blockquote,
+  pre,
+  code,
+  .entry-content,
+  .entry-meta,
+  h1, h2, h3, h4, h5, h6,
+  .nav-menu,
+  li > ul,
+  li > ol,
+  .alignright, .post-edit-link, .post-edit-link:visited, .comments-link:visited, .comments-link {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; }
+  #menuButton {
+    background: #000;
+    color: #fff; }
+  footer .site-info {
+    text-align: left; } }
 
 @media all and (min-width: 321px) and (max-width: 480px) {
   body {
-    font-size: 100%; }
+    font-size: 125%; }
   p {
-    padding: 5px; }
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
   .site-branding a {
-    font-size: 1rem; }
+    font-size: 2.4rem; }
   .content-area {
     float: left;
-    margin: 0 0 0 0;
+    margin: 0px 0px 0px 0px;
     width: 100%; }
   .site-main {
     margin: 0 0 0 0; }
@@ -1164,18 +1266,38 @@ blockquote {
     clear: both;
     width: 100%; }
   img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  body,
+  blockquote,
+  pre,
+  code,
+  .entry-content,
+  .entry-meta,
+  h1, h2, h3, h4, h5, h6,
+  .nav-menu,
+  li > ul,
+  li > ol,
+  .alignright, .post-edit-link, .post-edit-link:visited, .comments-link:visited, .comments-link {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; }
+  #menuButton {
+    background: #000;
+    color: #fff; }
+  footer .site-info {
+    text-align: left; } }
 
 @media all and (min-width: 0px) and (max-width: 320px) {
   body {
-    font-size: 90%; }
+    font-size: 127%; }
   p {
-    padding: 5px; }
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
   .site-branding a {
-    font-size: 0.8rem; }
+    font-size: 2rem; }
   .content-area {
     float: left;
-    margin: 0 0 0 0;
+    margin: 0px 0px 0px 0px;
     width: 100%; }
   .site-main {
     margin: 0 0 0 0; }
@@ -1187,4 +1309,22 @@ blockquote {
     clear: both;
     width: 100%; }
   img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  body,
+  blockquote,
+  pre,
+  code,
+  .entry-content,
+  .entry-meta,
+  h1, h2, h3, h4, h5, h6,
+  .nav-menu,
+  li > ul,
+  li > ol,
+  .alignright, .post-edit-link, .post-edit-link:visited, .comments-link:visited, .comments-link {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; }
+  #menuButton {
+    background: #000;
+    color: #fff; }
+  footer .site-info {
+    text-align: left; } }

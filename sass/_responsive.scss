@@ -1,11 +1,13 @@
-// responsive mixin
+// responsive additional styles
 @mixin responsive( $fontsize, $siteTitle ) {
 	body {
 		font-size: $fontsize;
 	}
 	
 	p {
-		padding: 5px;	
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.site-branding {
@@ -16,7 +18,7 @@
 
 	.content-area {
 		float: left;
-		margin: 0 0 0 0;
+		margin: 0px 0px 0px 0px;
 		width: 100%;
 	}
 	.site-main {
@@ -34,6 +36,34 @@
 	img {
 		max-width: 100%;
 	}
+
+	body,
+	blockquote,
+	pre, 
+	code,
+	.entry-content, 
+	.entry-meta,
+	h1, h2,h3,h4,h5,h6,
+	.nav-menu, 
+	li > ul, 
+	li > ol,
+	.alignright,
+	.post-edit-link, .comments-link {
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+	}
+
+	#menuButton {
+		background: #000;
+		color: #fff;
+	}
+
+	footer .site-info {
+		text-align: left;
+	}
+
+
+
 } // end responsive mixin
 
 
@@ -66,8 +96,7 @@
 	}
 }
 
-
-/*! MEDIA QUERIES */
+/*! MEDIA QUERIES (mixin demo) */
 @media all and (min-width:960px) and (max-width: 1024px) {
   @include responsive( 100%, 2rem  ); // sidebar to bottom);
 }
@@ -77,21 +106,21 @@
 }
 
 @media all and (min-width:769px) and (max-width: 800px) {
- @include responsive( 103%,2rem  ); // sidebar to bottom);
+ @include responsive( 110%,2rem  ); // sidebar to bottom);
 }
 
 @media all and (min-width:569px) and (max-width: 768px) {
-   @include responsive( 100%,1.5rem  ); // sidebar to bottom);
+   @include responsive( 112%,1.5rem  ); // sidebar to bottom);
 }
 
 @media all and (min-width:481px) and (max-width: 568px) {
-    @include responsive( 100%,1.3rem  ); // sidebar to bottom);
+    @include responsive( 123%,2.7rem  ); // sidebar to bottom);
 }
 
 @media all and (min-width:321px) and (max-width: 480px) {
-   @include responsive( 100%,1rem  ); // sidebar to bottom);
+   @include responsive( 125%,2.4rem  ); // sidebar to bottom);
 }
 
 @media all and (min-width:0px) and (max-width: 320px) {
-   @include responsive( 90%,.8rem  ); // sidebar to bottom); // sidebar to bottom
+   @include responsive( 127%,2rem  ); // sidebar to bottom); // sidebar to bottom
 }

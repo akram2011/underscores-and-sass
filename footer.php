@@ -1,14 +1,9 @@
 <?php
 /**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
+ * file: footer.php
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package petj-17
  */
-
 ?>
 
 	</div><!-- #content -->
@@ -39,6 +34,9 @@
 
 // navigation icons
 jQuery(document).ready(function($) {
+
+	// test
+	console.log('jQuery from: footer.php');
 		
 	// font awesome before
 	$('.nav-previous a')
@@ -46,8 +44,10 @@ jQuery(document).ready(function($) {
 
 	// font awesome next
 	$('.nav-next a')
-		.append(' <i class="fa fa-chevron-circle-right" aria-hidden="true" style="font-size:2rem;"></i>');
+		.append('<i class="fa fa-chevron-circle-right" aria-hidden="true" style="font-size:2rem;"></i>');
 
+	$('#menuButton')
+		.html('<i class="fa fa-home" aria-hidden="true" style="font-size:2rem;color:#fff;background:#000"></i>'); // add and style icon
 })
 
 </script>
