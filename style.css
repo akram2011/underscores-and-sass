@@ -1031,7 +1031,7 @@ blockquote {
   height: auto; }
 
 /*! MEDIA QUERIES (mixin demo) */
-@media all and (min-width: 960px) and (max-width: 1024px) {
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
   body {
     font-size: 100%; }
   p {
@@ -1075,7 +1075,7 @@ blockquote {
   footer .site-info {
     text-align: left; } }
 
-@media all and (min-width: 801px) and (max-width: 959px) {
+@media only screen and (min-width: 801px) and (max-width: 959px) {
   body {
     font-size: 100%; }
   p {
@@ -1119,7 +1119,7 @@ blockquote {
   footer .site-info {
     text-align: left; } }
 
-@media all and (min-width: 769px) and (max-width: 800px) {
+@media only screen and (min-width: 769px) and (max-width: 800px) {
   body {
     font-size: 110%; }
   p {
@@ -1163,7 +1163,7 @@ blockquote {
   footer .site-info {
     text-align: left; } }
 
-@media all and (min-width: 569px) and (max-width: 768px) {
+@media only screen and (min-width: 569px) and (max-width: 768px) {
   body {
     font-size: 112%; }
   p {
@@ -1207,7 +1207,7 @@ blockquote {
   footer .site-info {
     text-align: left; } }
 
-@media all and (min-width: 481px) and (max-width: 568px) {
+@media only screen and (min-width: 481px) and (max-width: 568px) {
   body {
     font-size: 123%; }
   p {
@@ -1251,7 +1251,7 @@ blockquote {
   footer .site-info {
     text-align: left; } }
 
-@media all and (min-width: 321px) and (max-width: 480px) {
+@media only screen and (min-width: 321px) and (max-width: 480px) {
   body {
     font-size: 125%; }
   p {
@@ -1295,7 +1295,7 @@ blockquote {
   footer .site-info {
     text-align: left; } }
 
-@media all and (min-width: 0px) and (max-width: 320px) {
+@media only screen and (min-width: 0px) and (max-width: 320px) {
   body {
     font-size: 127%; }
   p {
