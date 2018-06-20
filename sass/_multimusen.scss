@@ -1,0 +1,76 @@
+/**
+ * MULTIMUSEN STYLES
+ * animations and minor ed.
+ * copy from appearance > custom css
+ **/
+
+.site-title {
+	float:left;
+	margin-right:.5rem;
+}
+
+/* logo animation keyframes */
+@keyframes example {
+    0%   {top:-255px;}
+    25%  {top:0px;}
+    50%  {top:200px;}
+    75%  {top:100px;}
+    100% {top:-50px;}
+}
+
+/* execute the logo animation */
+.site-branding img {
+	/*
+	 position: relative;
+	z-index:1000;
+   animation-name: example;
+   animation-duration: 2s;
+	*/
+}
+
+/* widget links */
+.panel-widget-style a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: large;
+	color: #fff;
+}
+
+.panel-widget-style a:hover {
+	/*background-color: black;*/
+}
+
+/* widget title */
+.widget-title {
+
+}
+
+/* sub-menu */
+.sub-menu .menu-item {
+	padding: .5rem;
+}
+
+/* text width */
+h4, h5, p {
+	max-width: 35rem;
+}
+
+p {
+	margin-right: 3rem;
+}
+
+/* .gravatar-img */
+.grofile-thumbnail {
+	max-width:111px;
+	border-radius:50%;
+}
+
+.site-branding {
+	padding-top: 1.23rem;
+	padding-bottom:1rem;
+}
+
+.site {
+	padding-left: 10px;
+	padding-right: 10px;
+}

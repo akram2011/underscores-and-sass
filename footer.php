@@ -36,7 +36,7 @@
 jQuery(document).ready(function($) {
 
 	// test
-	console.log('jQuery from: footer.php');
+	// console.log('jQuery from: footer.php');
 		
 	// font awesome before
 	$('.nav-previous a')
@@ -46,12 +46,13 @@ jQuery(document).ready(function($) {
 	$('.nav-next a')
 		.append('<i class="fa fa-chevron-circle-right" aria-hidden="true" style="font-size:2rem;"></i>');
 
+	// add the 'home' icon to the mobile menu
 	$('#menuButton')
 		.html('<i class="fa fa-home" aria-hidden="true" style="font-size:2rem;color:#fff;background:#000"></i>'); // add and style icon
+
 })
 
 </script>
-
 
 </body>
 </html>
